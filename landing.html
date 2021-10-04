@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<title>Stream Gifts Product</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+	<link href="style.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+	<!-- navbar-->
+	<nav class="navbar navbar-light navbar-expand-lg shadow-sm bg-white fixed-top">
+		<a href="index.html" class="navbar-brand">
+			Stream Gifts
+		</a>
+
+		<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="newsletter.html" class="nav-link">Newsletter</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <nav id="landingsearchbar" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="landing.html">Search Products:</a>
+        <!-- search feature -->
+        <div>
+          <form class="form-inline">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchbox">
+          </form>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible section links  -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#techproducts">Tech Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#decorproducts">Decor Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#merchproducts">Merch Products</a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Checkout Modal -->
+                <button class="btn ml-auto" data-toggle="modal" data-target="#checkout_modal">Checkout</button>
+    </nav>
+
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1>
+              Create The Best Stream Online
+            </h1>
+            <h2>
+              Build Your Audience,
+            </h2>
+            <h2>
+              Change The World
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Products -->
+
+    <!-- Tech Prodcuts -->
+    <section id="techproducts">
+      <div class="row justify-content-center">
+        
+        <!-- Microphone -->
+        <div class="card col-sm-5 col-md-3 m-2">
+          <img class="card-img-top" src="img/MicrophoneLanding.jpg" alt="img/MicrophoneLanding.jpg">
+          <div class="card-body">
+          <h4 class="card-title">Microphone</h4>
+
+           <!-- Button with tooltip -->
+           <button type="button" class="btn btn-secondary mt-1" data-toggle="tooltip" data-placement="bottom" title="Ensure your audience can your beautiful voice while streaming.">Details</button>
+
+          <!-- Button for cart modal -->
+          <button type="button" class="btn btn-secondary mt-1" data-toggle="modal" data-target="#cart_modal">Buy Now!</button>
+        </div>
+      </div>
+
+      <!-- Webcam -->
+      <div class="card col-sm-5 col-md-3 m-2">
+          <img class="card-img-top" src="img/WebcamsLanding.jpg" alt="img/WebcamsLanding.jpg">
+          <div class="card-body">
+          <h4 class="card-title">Webcam</h4>
+
+           <!-- Button with tooltip -->
+           <button type="button" class="btn btn-secondary mt-1" data-toggle="tooltip" data-placement="bottom" title="Ensure your audience can see your beautiful smile during your stream.">Details</button>
+
+          <!-- Button for cart modal -->
+          <button type="button" class="btn btn-secondary mt-1" data-toggle="modal" data-target="#cart_modal">Buy Now!</button>
+        </div>
+      </div>
+
+      <!-- Capture Card -->
+      <div class="card col-sm-5 col-md-3 m-2">
+          <img class="card-img-top" src="img/CaptureCardLanding.jpg" alt="img/CaptureCardLanding.jpg">
+          <div class="card-body">
+          <h4 class="card-title">Capture Card</h4>
+
+           <!-- Button with tooltip -->
+           <button type="button" class="btn btn-secondary mt-1" data-toggle="tooltip" data-placement="bottom" title="Connect your game console or camera to your stream">Details</button>
+
+          <!-- Button for cart modal -->
+          <button type="button" class="btn btn-secondary mt-1" data-toggle="modal" data-target="#cart_modal">Buy Now!</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Decor Prodcuts -->
+    <section id="decorproducts">
+      <div class="row justify-content-center">
+        
+        <div class="card col-sm-5 col-md-3 m-2">
+          <img class="card-img-top" src="img/RGBLanding.jpg" alt="img/RGBLanding.jpg">
+          <div class="card-body">
+          <h4 class="card-title">RGB Lighting</h4>
+
+           <!-- Button with tooltip -->
+           <button type="button" class="btn btn-secondary mt-1" data-toggle="tooltip" data-placement="bottom" title="Every true gamer needs an RGB lit room">Details</button>
+
+          <!-- Button for cart modal -->
+          <button type="button" class="btn btn-secondary mt-1" data-toggle="modal" data-target="#cart_modal">Buy Now!</button>
+        </div>
+      </div>
+
+      <div class="card col-sm-5 col-md-3 m-2">
+          <img class="card-img-top" src="img/TapestryLanding.jpg" alt="img/TapestryLanding.jpg">
+          <div class="card-body">
+          <h4 class="card-title">Tapestry</h4>
+
+           <!-- Button with tooltip -->
+           <button type="button" class="btn btn-secondary mt-1" data-toggle="tooltip" data-placement="bottom" title="Throw up a nice background behind your camera">Details</button>
+
+          <!-- Button for cart modal -->
+          <button type="button" class="btn btn-secondary mt-1" data-toggle="modal" data-target="#cart_modal">Buy Now!</button>
+        </div>
+      </div>
+      <div class="card col-sm-5 col-md-3 m-2">
+          <img class="card-img-top" src="img/PosterLanding.jpg" alt="img/PosterLanding.jpg">
+          <div class="card-body">
+          <h4 class="card-title">Game Posters</h4>
+
+           <!-- Button with tooltip -->
+           <button type="button" class="btn btn-secondary mt-1" data-toggle="tooltip" data-placement="bottom" title="Decorate your room with posters from your favorite games">Details</button>
+
+          <!-- Button for cart modal -->
+          <button type="button" class="btn btn-secondary mt-1" data-toggle="modal" data-target="#cart_modal">Buy Now!</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Merch Prodcuts -->
+    <section id="merchproducts">
+      <div class="row justify-content-center">
+        
+        <div class="card col-sm-5 col-md-3 m-2">
+          <img class="card-img-top" src="img/CreatorLanding.jpg" alt="img/CreatorLanding.jpg">
+          <div class="card-body">
+          <h4 class="card-title">Creator-Made Shirts</h4>
+
+           <!-- Button with tooltip -->
+           <button type="button" class="btn btn-secondary mt-1" data-toggle="tooltip" data-placement="bottom" title="Support your favorite creator's merchandise, such as the one above">Details</button>
+
+          <!-- Button for cart modal -->
+          <button type="button" class="btn btn-secondary mt-1" data-toggle="modal" data-target="#cart_modal">Buy Now!</button>
+        </div>
+      </div>
+
+      <div class="card col-sm-5 col-md-3 m-2">
+          <img class="card-img-top" src="img/TwitchLanding.jpg" alt="img/TwitchLanding.jpg">
+          <div class="card-body">
+          <h4 class="card-title">Twitch Shirts</h4>
+
+           <!-- Button with tooltip -->
+           <button type="button" class="btn btn-secondary mt-1" data-toggle="tooltip" data-placement="bottom" title="Represent your support for streaming on Twitch">Details</button>
+
+          <!-- Button for cart modal -->
+          <button type="button" class="btn btn-secondary mt-1" data-toggle="modal" data-target="#cart_modal">Buy Now!</button>
+        </div>
+      </div>
+      <div class="card col-sm-5 col-md-3 m-2">
+          <img class="card-img-top" src="img/YoutubeLanding.jpg" alt="img/YoutubeLanding.jpg">
+          <div class="card-body">
+          <h4 class="card-title">YouTube Shirts</h4>
+
+           <!-- Button with tooltip -->
+           <button type="button" class="btn btn-secondary mt-1" data-toggle="tooltip" data-placement="bottom" title="Represent your support for streaming on Youtube">Details</button>
+
+          <!-- Button for cart modal -->
+          <button type="button" class="btn btn-secondary mt-1" data-toggle="modal" data-target="#cart_modal">Buy Now!</button>
+        </div>
+      </div>
+
+    </section>
+
+
+        <!-- Add to Cart Modal -->
+
+    <div class="modal fade" id="cart_modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Shopping Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    <p>Item has been added to your shopping cart</p>
+                    <p>Proceed to checkout when you're finished shopping</p>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Checkout form modal -->
+
+    <div class="modal fade" id="checkout_modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkout_modal">Checkout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                  <form role="form" id="checkoutform" action="response.html">
+                    <div class="md-form mb-5">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Full name" />
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                     </div>
+
+                    <div class="md-form mb-5">
+                        <label for="address">Shipping Address</label>
+                        <input id="address" name="address" type="text" class="form-control" placeholder="Address">
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <label for="city">City</label>
+                        <input id="city" name="city" type="text" class="form-control" placeholder="City">
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <label for="state">State</label>
+                        <input id="state" name="state" type="text" class="form-control" placeholder="State">
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <label for="zip">Zip Code</label>
+                        <input id="zip" name="zip" type="text" class="form-control" placeholder="Zip Code">
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <label for="gift">Is the purchase a gift?
+                        <input type="checkbox" class="form-checkbox" id="gift" name="gift">
+                        </label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <label for="giftmessage">If it is a gift, any message?</label>
+                        <input id="giftmessage" name="giftmessage" type="text" class="form-control" placeholder="Message">
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <label for="shippingdate">Ship product by...</label>
+                        <input id="shippingdate" name="shippingdate" type="date" class="form-control" placeholder="Date">
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-success">Send</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    
+    
+    <script>
+        //Filter to compare h4 in the card with searchbox value
+        $(document).ready(function() {
+            $("#searchbox").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $('div.card').filter(function() {
+                    $(this).toggle($(this).find('h4').text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        //Enable tooltips everywhere in the page
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        $(function() {
+            $("#checkoutform").validate({
+                rules: 
+                {
+                    //add your validation rules
+                    fullname: {
+                      required: true
+                     },
+                    email: {
+                      required: true,
+                       email: true 
+                    },
+                    address: {
+                      required: true
+                    },
+                    city: {
+                      required: true
+                    },
+                    state: {
+                      required: true,
+                      minlength: 2,
+                      maxlength: 2
+                    },
+                    zip: {
+                      required: true,
+                      digits: true, 
+                      maxlength: 5,
+                      minlength: 5
+                    },
+                    shippingdate: {
+                      required: true
+                    }
+                } //end of rules 
+                ,
+                messages: 
+                {
+                    //add your custom messages
+                    state: {
+                      minlength: "Please provide a two character state abbreviation",
+                      maxlength: "Please provide a two character state abbreviation"
+                    }
+                    
+                } //end of messages
+            }); //end of validate function
+            
+            
+
+        }); //end of page load function
+
+    </script>
+
+  </body>
+</html>

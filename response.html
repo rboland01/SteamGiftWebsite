@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkout Response</title>
+    <style>
+     th,td{border: 1px solid black}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link href="style.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+    
+	<!-- navbar-->
+	<nav class="navbar navbar-light navbar-expand-lg shadow-sm bg-white fixed-top">
+		<a href="index.html" class="navbar-brand">
+			Stream Gifts
+		</a>
+
+		<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="newsletter.html" class="nav-link">Newsletter</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<section>
+  <h1 class="bg-light">Checkout Recap</h1>
+  <table class="bg-light">
+
+     <tr>
+       <th colspan="2">Thank you for shopping! Below is a summary of your information: </th>
+     </tr>
+     <tr>
+       <td>Full Name</td>
+       <td><p><span id="name_span"></span></p></td>
+     </tr>
+
+     <tr>
+       <td>Email</td>
+       <td><p><span id="email_span"></span></p></td>
+     </tr>
+
+     <tr>
+       <td>Address</td>
+       <td><p><span id="address_span"></span></p></td>
+     </tr>
+
+     <tr>
+      <td>City</td>
+      <td><p><span id="city_span"></span></p></td>
+     </tr>
+
+     <tr>
+      <td>State</td>
+      <td><p><span id="state_span"></span></p></td>
+     </tr>
+
+     <tr>
+      <td>Zip Code</td>
+      <td><p><span id="zip_span"></span></p></td>
+     </tr>
+
+     <tr>
+      <td>Gift?</td>
+      <td><p><span id="gift_span"></span></p></td>
+     </tr>
+
+     <tr>
+      <td>Gift Message</td>
+      <td><p><span id="giftmessage_span"></span></p></td>
+     </tr>
+
+     <tr>
+      <td>Shipping Date</td>
+      <td><p><span id="shippingdate_span"></span></p></td>
+     </tr>
+   </table>
+  </section>
+
+
+    <!-- JavaScript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+    <script>
+        
+        window.onload = function() {
+            var params = new window.URLSearchParams(window.location.search);
+            
+            //assign query string parameters pet, first_name, volunteer, and phone to local variables with same name
+            var params = new window.URLSearchParams(window.location.search);
+            
+            var name = params.get('name');
+            var email = params.get('email');
+            var address = params.get('address');
+            var city = params.get('city');
+            var state = params.get('state');
+            var zip = params.get('zip');
+            var gift = params.get('gift');
+            var giftmessage = params.get('giftmessage');
+            var shippingdate = params.get('shippingdate');
+            
+
+            $("#name_span").text( `${name}` );
+            $("#email_span").text( `${email}` );
+            $("#address_span").text( `${address}` );
+            $("#city_span").text( `${city}` );
+            $("#state_span").text( `${state}` );
+            $("#zip_span").text( `${zip}` );
+            $("#gift_span").text( `${gift}` );
+            $("#giftmessage_span").text( `${giftmessage}` );
+            $("#shippingdate_span").text( `${shippingdate}` );
+            
+
+            
+            
+
+        };
+    </script>
+
+</body>
+
+</html>
